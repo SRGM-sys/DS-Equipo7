@@ -1,14 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package SeccionB;
 import java.util.List;
 
-/**
- *
- * @author User
- */
 public class Seccionb {
    
 
@@ -38,7 +30,7 @@ public class Product {
     private double weight;
     private String type;
 
-    public Product(String name, double price, double weight, String type) { ... }
+    public Product(String name, double price, double weight, String type){}
     public String getName()   { return name; }
     public double getPrice()  { return price; }
     public double getWeight() { return weight; }
@@ -60,8 +52,8 @@ public class IvaCalculator {
         double iva = 0;
         switch (p.getType()) {
             case "book":       iva = 0;              break;
-            case "clothing":   iva = price * 0.12;   break;
-            case "technology": iva = price * 0.15;   break;
+            case "clothing":   iva = p.getPrice() * 0.12;   break;
+            case "technology": iva = p.getPrice() * 0.15;   break;
         }
         return iva;
     }
