@@ -3,6 +3,8 @@ package SeccionB;
 import java.util.ArrayList;
 import java.util.List;
 
+//Version Corregida
+
 // ================== PRODUCTOS ==================
 
 // LSP + OCP: clase base abstracta, sin peso ni "type"
